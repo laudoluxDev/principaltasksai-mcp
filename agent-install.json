@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "product_id": "principal",
+  "product_name": "PrincipalTasksAI",
+  "official_domain": "principaltasksai.com",
+  "official_github_repo": "https://github.com/laudoluxDev/principaltasksai-mcp",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npx",
+    "npx": {
+      "command": "npx",
+      "args": [
+        "@tasksai/install",
+        "principal",
+        "--source",
+        "https://github.com/laudoluxDev/principaltasksai-mcp"
+      ],
+      "requires": [
+        "node",
+        "npm",
+        "npx"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://principaltasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "principal",
+      "doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "principal",
+      "uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://principaltasksai.com/support",
+    "email": "support@principaltasksai.com"
+  }
+}
