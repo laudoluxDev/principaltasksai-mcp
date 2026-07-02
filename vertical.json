@@ -1,0 +1,11 @@
+{
+  "product_id": "principal",
+  "display_name": "PrincipalTasksAI",
+  "tool_prefix": "principaltasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://principaltasksai.com",
+  "billing_url": "https://principaltasksai.com/buy-credits.html",
+  "support_email": "support@principaltasksai.com",
+  "privacy_summary": "PrincipalTasksAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. PrincipalTasksAI does not process the user's task content. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms.",
+  "first_prompt": "Check my PrincipalTasksAI credit balance."
+}
